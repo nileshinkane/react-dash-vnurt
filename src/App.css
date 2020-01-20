@@ -1,0 +1,92 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: lightgray;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1d185a;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f0f0;
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.Dashboard {
+  width: 74%;
+  margin: 70px 3% 0 22%;
+}
+
+.Login__root {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: #f1f0f0;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login__Paper{
+  min-height: 35vh;
+  height: auto;
+  width: 40%;
+  padding: 1em;
+}
+
+.Login__form{
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.General__root {
+  height: calc(90vh - 45px);
+  width: 100%;
+  margin: 70px 3% 0 22%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.General {
+  padding: 20px;
+}
+.highlight {
+  background-color: lightgray;
+  font-family: monospace !important;
+}
+
+@media screen and (max-width: 960px) {
+  .Dashboard {
+    width: 100%;
+    margin: 70px 3% 0 3%;
+  }
+}

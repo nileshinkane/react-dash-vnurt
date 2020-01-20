@@ -1,0 +1,68 @@
+
+
+.Sidebar__real {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    min-height: 100vh;
+    height: auto;
+    background-color: #211c31 !important;
+    border-radius: 0 !important;
+}
+
+.Sidebar__Nav {
+    position: fixed;
+    top: 0;
+    width: 80%;
+    height: 50px;
+    margin-left: 20%;
+    border-radius: 0 !important;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 30px;
+    z-index: 100;
+} 
+.ListBox{
+    z-index: 10;
+}
+
+.Sidebar__Logo {
+    width: 80%;
+    height: 110px;
+    background-color: #e6e7f0 !important;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 4vw;
+}
+.Navbar__root{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.Menu {
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .Sidebar__real {
+      display: none;
+    }
+    .Sidebar__Nav {
+        transform: translate3d(-0%,0,0) !important;
+        width: 100% !important;
+        margin: 0;
+    }
+    .Menu {
+        display: block;
+        position: absolute;
+        left: 5%;
+        cursor: pointer;
+    }
+  }
